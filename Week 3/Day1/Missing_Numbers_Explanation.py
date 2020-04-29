@@ -21,7 +21,7 @@ def missingNumbers(arr,brr):
     # value from b=[200,201,202,203,204....] So we are mapping values of b to index by subtracting minb
     # minb is 200 in this case
     #value from arr or brr will always act as an index of carr after subtracting minb
-    for b in brr:
+    for b in brr: #Time complexity is O(len(brr))
         carr[b-minb] += 1
 
     #In following three lines I am printing the carr with it's index and corresponding brr value(if present)
@@ -30,11 +30,11 @@ def missingNumbers(arr,brr):
     print()
 
     #Decreasing count, as we are encountering same elements while traversing arr
-    for a in arr:
+    for a in arr:   #Time complexity is O(len(arr))
         carr[a-minb] -= 1
 
     #printing the count after subtracting the count of elements from arr
-    for indx,cnt in enumerate(carr):
+    for indx,cnt in enumerate(carr):  #Time complexity is O(1) as len(carr)=100 which is constant
         print(*(minb+indx,indx,"count=",cnt,),end="|")
     print()
 
@@ -43,6 +43,7 @@ def missingNumbers(arr,brr):
             res.append(indx+minb)
 
     return res
+    #Time complexity will be O(len(arr)+len(brr))
 
 
 
