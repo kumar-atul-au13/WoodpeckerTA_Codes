@@ -1,3 +1,4 @@
+# https://www.hackerrank.com/challenges/missing-numbers/problem
 def missingNumbers(arr,brr):
     carr = [0]*101
     minb=min(brr)

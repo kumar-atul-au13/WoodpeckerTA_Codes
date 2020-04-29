@@ -1,4 +1,5 @@
-#Target time cmplexity O(n*n)
+#https://www.hackerrank.com/challenges/missing-numbers/problem
+#Target time cmplexity O(n*n) (Simplified way of saying)
 """This approach is like traversing arr, finding each elements of arr in brr and
 deleting the match from brr
 So, at last we will be left with numbers in brr which has been dropped from arr, of course with
