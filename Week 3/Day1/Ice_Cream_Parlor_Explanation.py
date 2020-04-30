@@ -1,7 +1,9 @@
+#Question Link-https://www.hackerrank.com/challenges/icecream-parlor/problem
+#Video Link-https://drive.google.com/open?id=1qz5xc_cQCcTS9thKSjxcFpBwe5ZAjUuF
 #O(N^2) Complexity
 #Let's say we have array of length 5 so the indexes will be 0,1,2,3,4
 #So, in this approach we will checking the sum in following order
-#Outer for loop (line 6) will run 4=len(arr[:-1]) times
+#Outer for loop (line 15) will run 4=len(arr[:-1]) times
 #First loop of line 6- first_indx=0: pairs whose sum will be checked are (0 1)(0 2)(0 3)(0 4)
 #Second loop first_indx=1 pairs are(1 2)(1 3)(1 4)
 #Third loop  first_indx=2 pairs are(2 3)(2 3)

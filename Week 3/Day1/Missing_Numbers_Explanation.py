@@ -1,4 +1,5 @@
 #https://www.hackerrank.com/challenges/missing-numbers/problem
+#Video- https://drive.google.com/open?id=1WSLNA72XMkGPfP4se7ms-xIG40lVD6Tn
 #Target time cmplexity O(n*n) (Simplified way of saying)
 """This approach is like traversing arr, finding each elements of arr in brr and
 deleting the match from brr
