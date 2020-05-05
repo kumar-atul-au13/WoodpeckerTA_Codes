@@ -85,6 +85,6 @@ def quicksort(arr,start,end):
 
 
 arr=[1,3,9,8,2,7,5]
-# arr1=[5,8,1,3,7,9,2]
-quicksort(arr,0,len(arr)-1)
+brr=[5,8,1,3,7,9,2]
+quicksort(arr+brr,0,13)
 print(*arr)

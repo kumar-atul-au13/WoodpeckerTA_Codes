@@ -1,36 +1,3 @@
-# def part(arr,start,end):
-#     # print(start,end,arr[start:end+1],arr)
-#     if start==end:
-#         return start
-#     pivot=arr[start]
-#     left,right=start,start+1
-#     while right<=end:
-#         if arr[right]<=pivot:
-#             arr[left+1],arr[right]=arr[right],arr[left+1]
-#             left+=1
-#         right+=1
-#     # for shift in range(start+1,left+1):
-#     #     arr[shift-1]=arr[shift]
-#     # arr[left]=pivot
-#     arr[left],arr[start]=pivot,arr[left]
-#     # print(start,end,arr[start:end+1],arr,arr[left])
-#     return left
-# def part1(arr,start,end):
-#     start_cpy=start
-#     pivot=arr[start]
-#     while start<end:
-#         if arr[start]<=pivot:
-#             start+=1
-#         elif arr[end]>pivot:
-#             end-=1
-#         else:
-#             arr[start],arr[end]=arr[end],arr[start]
-#     if arr[start]>pivot:
-#         arr[start-1],arr[start_cpy]=arr[start_cpy],arr[start-1]
-#         return start-1
-#     else:
-#         arr[start],arr[start_cpy]=arr[start_cpy],arr[start]
-#         return start
 def part3(arr,start,end):
     res=[]
     pivot=arr[start]

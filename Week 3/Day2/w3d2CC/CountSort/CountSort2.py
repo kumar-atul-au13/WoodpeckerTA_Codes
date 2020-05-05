@@ -7,8 +7,10 @@ def countingSort(arr):
     # [[0]*4 for i in range(4)]
     for elem in arr:
         count_arr[elem]+=1
+    print(count_arr[:10])
     for elem,freq in enumerate(count_arr):
         while freq>0:
             res.append(elem)
             freq-=1
     return res
+print(countingSort([5,2,3,5,2,2,4]))
