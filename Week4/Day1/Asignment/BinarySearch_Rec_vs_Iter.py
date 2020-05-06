@@ -1,5 +1,6 @@
+#Video-https://drive.google.com/open?id=1KCkTPZFZHmKcTuKfA1fnuQVZycpcdCo2
 import time
-n=10**5
+
 n=10**7
 
 def binary_search_rec(arr,srch):
@@ -32,4 +33,17 @@ def binary_search_itter(arr,srch):
 start_time=time.time()
 print(binary_search_itter(list(range(n)),n))
 print(time.time()-start_time)
+
+#Simple way of writing Binary_search recursion:
+def binary_search_rec1(arr,srch,low,high):
+    if low>high:
+        return -1
+    mid=(low+high)//2
+    if arr[mid]==srch:
+        return mid
+    elif arr[mid]>srch:
+        return binary_search_rec1(arr,srch,low,mid-1)
+    else:
+        return binary_search_rec1(arr,srch,mid+1,high)
+print(binary_search_rec1(list(range(n)),n-1,0,n-1))
 

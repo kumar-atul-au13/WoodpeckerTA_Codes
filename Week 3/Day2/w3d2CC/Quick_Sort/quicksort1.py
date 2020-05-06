@@ -1,3 +1,5 @@
+#Question-https://www.hackerrank.com/challenges/quicksort1
+#Video-[Start Time 4:50]https://drive.google.com/open?id=1LcuasCoKJrBBQ8x1Yid4cppQg5uMAtL6
 def quickSort(arr):
     before=[]
     equal=[]

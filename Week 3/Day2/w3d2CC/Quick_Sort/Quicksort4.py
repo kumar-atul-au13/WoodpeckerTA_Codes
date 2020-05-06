@@ -1,4 +1,5 @@
-# Enter your code here. Read input from STDIN. Print output to STDOUT
+#Question-https://www.hackerrank.com/challenges/quicksort4
+#Video-https://drive.google.com/open?id=1NRoLDuaHj-86DQte9qp3YO0_2cUl9NHc
 n=int(input())
 arr=[int(x)for x in input().split()]
 shift_quick=0

@@ -1,3 +1,5 @@
+#Question-https://www.hackerrank.com/challenges/quicksort2
+#Video-[Start Time 45:00]https://drive.google.com/open?id=1yeml3IWLbPFQMAuy9-5VosdSfZGHq-El
 def part3(arr,start,end):
     res=[]
     pivot=arr[start]
@@ -13,13 +15,9 @@ def part3(arr,start,end):
     return start+i
 
 def quicksort(arr,start,end):
-
     if start>=end:
         return
-    # print(arr[start:end+1],start,end)
-    # print(start,end)
     i=part3(arr,start,end)
-    # print(i)
     quicksort(arr,start,i-1)
     quicksort(arr,i+1,end)
     print(arr[start:end+1])

@@ -1,3 +1,5 @@
+#Question-https://www.hackerrank.com/challenges/countingsort3/problem
+#Video-https://drive.google.com/open?id=1yeml3IWLbPFQMAuy9-5VosdSfZGHq-El
 n=int(input())
 arr=[ int(input().split(" ")[0]) for x in range(n)]
 

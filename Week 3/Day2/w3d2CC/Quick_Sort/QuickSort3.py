@@ -1,3 +1,5 @@
+#Question-https://www.hackerrank.com/challenges/quicksort3
+#Video-[Start time 1:00:00]https://drive.google.com/open?id=1yeml3IWLbPFQMAuy9-5VosdSfZGHq-El
 def part(arr,start,end):
     # print(start,end,arr[start:end+1],arr)
     if start==end:
