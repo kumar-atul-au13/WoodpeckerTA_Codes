@@ -12,7 +12,7 @@ def print_util(arr):
     global space
     mid=len(arr)//2
     print(" "*4*space+" ".join(map(lambda x:x.rjust(3),map(str,arr[:mid])))+bcolors.OKGREEN+" "+str(arr[mid]).rjust(3)+" "+bcolors.ENDC+str(' '.join(map(lambda x:x.rjust(3),map(str,arr[mid+1:])))))
-    print(" "*4*space+" ".join(map(lambda x:x.rjust(3),map(str,range(mid))))+" "+str(mid).rjust(3)+" "+str(' '.join(map(lambda x:x.rjust(3),map(str,range(mid+1,len(arr)))))))
+    print(" "*4*space+" ".join(map(lambda x:x.rjust(3),map(str,range(space,space+mid))))+" "+str(space+mid).rjust(3)+" "+str(' '.join(map(lambda x:x.rjust(3),map(str,range(mid+1+space,len(arr)+space))))))
     print()
 
 def binary_search_rec(arr,srch):
@@ -31,4 +31,4 @@ def binary_search_rec(arr,srch):
         if temp is not None:
             return mid +1 + temp
 print(binary_search_rec(list(range(100,200,3)),127))#find 100 ie first and last element
-print(binary_search_rec([1,4,7,90],90))
+# print(binary_search_rec([1,4,7,90],90))
