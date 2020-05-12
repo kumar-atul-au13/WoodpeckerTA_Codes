@@ -54,8 +54,8 @@ def power_sum_print(x, n, start=1,pdata=0,select=0):
         res.pop()
     print((prnt_util(res)+str(x)+" Dead ").rjust(7))
     return sm
-print(power_sum_print(100,3))
-# print(power_sum_print(100,2))
+# print(power_sum_print(100,3))
+print(power_sum_print(100,2))
 
 
 

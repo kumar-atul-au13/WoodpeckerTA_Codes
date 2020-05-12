@@ -18,3 +18,17 @@ def closestNumbers(arr):
     return res
 
 print(closestNumbers([-20, -3916237, -357920, -3620601, 7374819, -7330761, 30, 6246457, -6461594, 266854]))
+#Using two for loop (easy one)
+def closestNumbers(arr):
+    arr.sort()
+    minimum=arr[1]-arr[0]
+    res=[]
+    for indx in range(len(arr)-1):
+        if arr[indx+1]-arr[indx]<minimum:
+            minimum=arr[indx+1]-arr[indx]
+    for indx in range(len(arr)-1):
+        if minimum==arr[indx+1]-arr[indx]:
+            res.append(arr[indx])
+            res.append(arr[indx+1])
+    return res
+print(closestNumbers([5,4,3,2]))
