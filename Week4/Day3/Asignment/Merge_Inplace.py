@@ -1,3 +1,5 @@
+#Video-PENDING
+#Covered-False
 def merge(arr,starta,enda,startb,endb):
     while startb<=endb:
         print(arr,arr[starta],arr[startb])

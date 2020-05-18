@@ -1,5 +1,6 @@
 #Question-https://www.hackerrank.com/challenges/recursive-digit-sum/problem
 #While solution also possible
+#Video-https://drive.google.com/open?id=10lXLLEMFdR4y8qYO85YSfzM9c3yZ8PoC
 import time
 def superDigit(n, k):
     sm=0

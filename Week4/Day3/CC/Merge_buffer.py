@@ -1,3 +1,4 @@
+#Video-https://drive.google.com/open?id=10lXLLEMFdR4y8qYO85YSfzM9c3yZ8PoC
 arr=[9,10,11,12,None,None,None,None]
 brr=[0,2,4,8]
 crr=[-12,-9,10,11,None,None,None,None]

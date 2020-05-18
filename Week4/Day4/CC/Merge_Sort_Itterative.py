@@ -1,3 +1,5 @@
+#Video-https://drive.google.com/open?id=10lXLLEMFdR4y8qYO85YSfzM9c3yZ8PoC
+#Video-https://drive.google.com/open?id=1hcd9xJs0uoC1f92glm1FBpMkJZSD7nXe
 def merge(arr,brr):
     lena=len(arr)
     lenb=len(brr)
@@ -23,7 +25,7 @@ def merge_itter(arr):
     while i<=len(arr):
         for j in range(0,len(arr),2*i):
             arr[j:j+2*i]=merge(arr[j:j+i],arr[j+i:j+2*i])
-        i+=1
+        i*=2
 arr=[2,5,1,2,6,2,3]
 merge_itter(arr)
 
