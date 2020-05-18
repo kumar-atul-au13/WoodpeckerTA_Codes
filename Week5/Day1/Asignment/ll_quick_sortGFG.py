@@ -1,5 +1,5 @@
 #Question-https://www.geeksforgeeks.org/quicksort-on-singly-linked-list/
-
+#Video- https://drive.google.com/open?id=1fxhs1GEaFbzk6uylWmjleFhFJHCIgJwG
 def addNode(head,node):
     if head:
         node.next=head
