@@ -1,4 +1,5 @@
 # code https://practice.geeksforgeeks.org/problems/number-of-pairs/0
+#Video-https://drive.google.com/open?id=1X-n4ntcXhJxJjlfm0rMtDGabyhsHF_rN
 t = int(input())
 
 
@@ -22,7 +23,7 @@ for tt in range(t):
     Rule- For any pair xx and yy from xarr and yarr resp. if yy > xx  and xx is 3 and above
     then this pair is valid pair. For Eg. take any xx greater than 3 and yy greater than 3 ie. from
     4 onwards, xx and yy will always be a valid pair
-    Rule for '1' as yy-For handling one-All non one element from arr will make valid pair with each '1' in yarr
+    Rule for '1' as yy-For handling one-All non one element from xarr will make valid pair with each '1' in yarr
                  No. of ones in arrx are redundant[Handeled Seperately (1)]
     Rule for '2' ax xx-Since any pair with yy as '1' from yarr has been taken care of, pair with
               '2' are (2,3)-not valid(8<9) (2,4)-not valid(16==16) (2,5),(2,6),(2,7).... All pairs
