@@ -32,8 +32,8 @@ def displayD(head,name=None):
         print('\033[46m',curr_node.data,'\033[41m',end="\033[0m\033[47m-->")
         print('\033[44m',"None",'\033[0m')
         print()
-dll=create_dll([2,3])
-displayD(dll,"head")
+# dll=create_dll([2,3])
+# displayD(dll,"head")
 def del_end_dll(head):
     if not head or head.next is None:
         return None
@@ -48,8 +48,13 @@ def del_end_dll(head):
 def del_pos_dll(head,pos):
     temp=head
     while pos>1 :
-        temp=temp.next
-        pos-=1
+        if temp.next:
+            temp=temp.next
+            pos-=1
+        else:
+            print('invalid input')
+            return
+
     prev_node=temp.prev
     next_node=temp.next
     if prev_node:
@@ -60,5 +65,6 @@ def del_pos_dll(head,pos):
         next_node.prev=prev_node
     return head
 
-dll=create_dll([2,3])
-displayD(del_pos_dll(dll,2),"head")
+dll=create_dll([10,11,12,13,14])
+displayD(dll,"head")
+displayD(del_pos_dll(dll,5),"head")

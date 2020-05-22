@@ -1,6 +1,6 @@
 # ou are given a circular linked list, write the code for:
 # Deleting an element at a given position in the list
-
+#Video:https://drive.google.com/open?id=1BBJlXXAPPSJlAY3TdSJRjnPIs5JPxK0o
 def del_position_cll(head,pos):
     temp=head
     if pos==1:
