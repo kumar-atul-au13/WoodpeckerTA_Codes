@@ -21,13 +21,13 @@ def shortestReach(n, edges, s):
         print(lst_for_hp)
         poped_vertex = heapq.heappop(lst_for_hp)
         vertex=poped_vertex[1]
-        tweight=poped_vertex[0]
+        tweight=poped_vertex[0] #total weight is the weight of the path
         if vertex in infected_set:
             continue
         result[vertex]=tweight
         print(vertex,tweight)
         infected_set.add(vertex)
-        for adj_vertex, weight in graph[vertex].items():
-            if adj_vertex not in infected_set:
+        for adj_vertex, weight in graph[vertex].items(): #Travarese all adjacent vertex
+            if adj_vertex not in infected_set:           #If not visited then push in heap
                 heapq.heappush(lst_for_hp,(tweight+weight,adj_vertex))
     return result[1:s]+result[s+1:]
