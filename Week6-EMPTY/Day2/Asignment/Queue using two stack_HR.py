@@ -1,4 +1,5 @@
 #Question-https://www.hackerrank.com/challenges/queue-using-two-stacks/problem?isFullScreen=false
+#Video-https://drive.google.com/open?id=1_MnnOOmWdcsaCCDZRkhkttyLENo6Qt8T
 class stack:
     def __init__(self):
         self.lst=[]
@@ -28,7 +29,7 @@ class queue:
         self.enq_stack.push(data)
     def dequeue(self):
         res=self.deq_stack.pop()
-        if res:
+        if res is not None:
             return res
         transfer=self.enq_stack.pop()
         while transfer:

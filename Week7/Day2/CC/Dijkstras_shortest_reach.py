@@ -4,7 +4,10 @@ import heapq
 from collections import defaultdict
 # Complete the shortestReach function below.
 def shortestReach(n, edges, s):
-    graph=defaultdict(dict)
+    # graph=defaultdict(dict)
+    graph={}
+    for i in range(n):
+        graph[i]={}
     for v1,v2,w in edges:
         if v2 not in graph[v1]:
             graph[v1][v2]=w

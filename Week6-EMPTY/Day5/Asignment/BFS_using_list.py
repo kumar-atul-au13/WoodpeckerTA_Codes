@@ -14,17 +14,15 @@ def bfs(graph,vertex):
     visited=set()
     queue=Queue()
     queue.enqueue(vertex)
+    visited.add(vertex)
     while queue.peek():
-        queue.display_head()
+        # queue.display_head()
         curr_vert=queue.dequeue()
-        if curr_vert in visited:
-            continue
-        else:
-            print(curr_vert)
-            visited.add(curr_vert)
+        print(curr_vert)
         for adj_vert in graph[curr_vert]:
             if adj_vert not in visited:
                 queue.enqueue(adj_vert)
+                visited.add(adj_vert)
 
 
 bfs(graph,'A')
