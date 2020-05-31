@@ -1,3 +1,5 @@
+#video[6:00] https://drive.google.com/file/d/1btERkgmo2f8Rv2OT2DlKmgYk_26vMptE/view?usp=sharing
+
 from queue import Queue
 graph= {
     'A': {'B': 1, 'D': 4},

@@ -41,29 +41,21 @@ def bfs(graph,vertex,n):
     visited=set()
     queue=Queue()
     queue.enqueue(vertex)
+    visited.add(vertex)
     queue.enqueue("next_level")
     level=6
-    count=0
     while queue.peek():
-        # queue.display_head()
         curr_vert=queue.dequeue()
-        # if curr_vert in visited:
-        #     continue
         if curr_vert=="next_level":
             level+=6
-            if count is not 0:
-                queue.enqueue("next_level")
-                count=0
             continue
-        visited.add(curr_vert)
         for adj_vert in graph[curr_vert]:
             if adj_vert not in visited:
                 queue.enqueue(adj_vert)
-                count+=1
                 visited.add(adj_vert)
-                # result.append((adj_vert,level))
-                # print(adj_vert)
                 result[adj_vert]=level
+        if queue.peek()=="next_level":
+            queue.enqueue("next_level")
     return result
 
 def find_all_distances(graph,s,n):
