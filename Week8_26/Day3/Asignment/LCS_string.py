@@ -12,7 +12,7 @@ def lcs(str1,str2,m,n):
         while j<=n:
             if str1[i-1]==str2[j-1]:
                 dp[1][j]=1+dp[0][j-1]
-                res+=str1[i-1]
+                res+=str1[i-1]             #Just added this line
             else:
                 dp[1][j]=max(dp[0][j],dp[1][j-1])
             j+=1
