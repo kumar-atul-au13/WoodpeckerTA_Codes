@@ -1,4 +1,5 @@
 # https://www.hackerrank.com/challenges/ctci-bfs-shortest-reach/problem?h_r=internal-search
+#[ALTARNATE SOLUTION] https://github.com/anik-ghosh-au7/flamingo-woodpecker-attainU/blob/master/Solutions/Week%207/Day%201/w7d1cc1.py
 from collections import defaultdict
 class Node:
     def __init__(self,data):
