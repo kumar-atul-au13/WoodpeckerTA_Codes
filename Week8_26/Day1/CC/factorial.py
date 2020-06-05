@@ -1,3 +1,5 @@
+#Video- Missed recording on june 4th
+
 res=[None]*10
 res[0:2]=[1,1]
 def factorial(n):
@@ -8,6 +10,9 @@ def factorial(n):
     return res[n]
 print(factorial(9))
 print(res)
+
+
+
 res=[1,1]
 def fact(n):
     for i in range(2,n+1):
@@ -15,6 +20,9 @@ def fact(n):
     return res[-1]
 print(fact(9))
 print(res)
+
+
+#
 def fact_optim(n):
     temp=1
     for i in range(1,n+1):
