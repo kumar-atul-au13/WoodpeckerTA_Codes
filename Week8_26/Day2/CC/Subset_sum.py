@@ -17,11 +17,11 @@ def callsum(arr,given_sum=None):
             if arr[row_i-1]<=col_j:
                 dp[row_i][col_j]=dp[row_i-1][col_j] or dp[row_i-1][col_j-arr[row_i-1]]
     i=0
-    print(map(str,range(10)))
+    print(*[str(x).rjust(5) for x in range(10)])
     for row in dp:
         print(str(arr[i-1]).rjust(2), end=" ")
         i+=1
-        print(row)
+        print(*[str(x).rjust(5) for x in row])
 
 callsum([2,3,4,7],9)
 
